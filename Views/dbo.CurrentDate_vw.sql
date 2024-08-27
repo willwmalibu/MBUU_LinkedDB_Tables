@@ -4,7 +4,10 @@ SET ANSI_NULLS ON
 GO
 
 
+
 CREATE   VIEW [dbo].[CurrentDate_vw]
 AS
-SELECT CAST(GETDATE() AS DATE) AS CurrentDate,  CAST(GETDATE() AS TIME) AS CurrentTime, GETDATE() AS CurrentDateTime ,CAST(GETDATE()+1 AS DATE) Tomorrow
+SELECT CAST(GETDATE() AS DATE) AS CurrentDate,  CAST(GETDATE() AS TIME) AS CurrentTime
+, GETDATE() AS CurrentDateTime ,CAST(GETDATE()+1 AS DATE) Tomorrow
+, CAST(GETDATE()-1 AS DATE) AS Yesterday
 GO
