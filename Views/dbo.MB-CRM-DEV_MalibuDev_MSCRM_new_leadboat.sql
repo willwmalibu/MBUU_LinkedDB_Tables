@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+CREATE VIEW [dbo].[MB-CRM-DEV_MalibuDev_MSCRM_new_leadboat]
+AS
+SELECT * FROM [MB-CRM-DEV].[MalibuDev_MSCRM].[dbo].[new_leadboat]
+ WITH (NOLOCK);
+GO
